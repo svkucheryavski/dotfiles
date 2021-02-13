@@ -3,9 +3,11 @@
 set -e
 
 syncList=(
-   # VIM settings
+   # VIM and Tmux settings
    ".vim"
    ".vimrc"
+   ".tmux"
+   ".tmux.cong"
    # ZSH settings
    ".zprofile"
    ".zshrc"
@@ -13,7 +15,7 @@ syncList=(
    ".gitconfig"
 )
 
-OLDDIR=~/dotfiles_old
+OLDDIR=~/.dotfiles_old
 if [ ! -d "$OLDDIR" ]; then
    echo "ok"
    mkdir "$OLDDIR"
