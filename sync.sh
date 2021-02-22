@@ -7,7 +7,7 @@ syncList=(
    ".vim"
    ".vimrc"
    ".tmux"
-   ".tmux.cong"
+   ".tmux.conf"
    # ZSH settings
    ".zprofile"
    ".zshrc"
@@ -26,7 +26,7 @@ for f in ${syncList[@]}; do
    if [ -e ~/"${f}" ]; then
       if [ ! -L ~/"${f}" ]; then
          echo " - file exist, moving to .dotfiles_old."
-         mv ~/"${f}" ~/"$OLDDIR"/"${f}"
+         mv ~/"${f}" "$OLDDIR"/"${f}"
       else
          echo " - link exists, removing."
          unlink ~/"${f}"
