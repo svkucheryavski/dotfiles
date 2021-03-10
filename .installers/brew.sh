@@ -22,7 +22,7 @@ brew install --cask rstudio
 brew install --cask ticktick
 brew install --cask figma
 brew install --cask appcleaner
-brew install --cask mendeley-reference-manager
+brew install --cask zotero
 brew install --cask google-chrome
 brew install --cask docker
 
@@ -31,4 +31,4 @@ brew tap homebrew/cask-fonts
 brew install --cask font-jetbrains-mono
 
 # remove outdated stuff
-bew cleanup
+brew cleanup
