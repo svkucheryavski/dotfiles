@@ -25,6 +25,7 @@ brew install --cask appcleaner
 brew install --cask zotero
 brew install --cask google-chrome
 brew install --cask docker
+brew install --cask blender
 
 # fonts
 brew tap homebrew/cask-fonts
